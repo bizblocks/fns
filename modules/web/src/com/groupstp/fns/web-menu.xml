@@ -5,6 +5,7 @@
         <item bean="fns_FnsUpdateWorker"
               beanMethod="refreshTaxpayers"
               icon="REFRESH"/>
-        <item screen="sandbox"/>
+        <item id="sandbox-fns"
+              screen="sandbox-fns"/>
     </menu>
 </menu-config>
