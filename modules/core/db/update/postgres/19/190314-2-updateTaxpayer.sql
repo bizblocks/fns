@@ -1,0 +1,10 @@
+alter table FNS_TAXPAYER rename column deleted_by to deleted_by__u22868 ;
+alter table FNS_TAXPAYER rename column delete_ts to delete_ts__u67016 ;
+alter table FNS_TAXPAYER rename column updated_by to updated_by__u92362 ;
+alter table FNS_TAXPAYER rename column update_ts to update_ts__u41942 ;
+alter table FNS_TAXPAYER rename column created_by to created_by__u58821 ;
+alter table FNS_TAXPAYER rename column create_ts to create_ts__u49421 ;
+alter table FNS_TAXPAYER rename column version to version__u62952 ;
+alter table FNS_TAXPAYER alter column version__u62952 drop not null ;
+update FNS_TAXPAYER set INN = '' where INN is null ;
+alter table FNS_TAXPAYER alter column INN set not null ;
