@@ -1,6 +1,6 @@
 
 buildscript {
-    ext.cubaVersion = '6.10.7'
+    ext.cubaVersion = '6.10.8'
     repositories {
         
         mavenLocal()
@@ -33,7 +33,7 @@ apply(plugin: 'cuba')
 cuba {
     artifact {
         group = 'com.groupstp.fns'
-        version = '0.1'
+        version = "0.1.1"
         isSnapshot = true
     }
     tomcat {
