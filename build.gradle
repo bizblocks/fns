@@ -42,6 +42,9 @@ cuba {
     ide {
         vcs = 'Git'
     }
+    uploadRepository {
+        url = myMavenRepoWriteUrl
+    }
 }
 
 dependencies {
